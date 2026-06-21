@@ -1,0 +1,15 @@
+# Ignore Node modules
+node_modules/
+
+# macOS
+.DS_Store
+test.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / env
+dist/
+.env
