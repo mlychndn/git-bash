@@ -1,0 +1,17 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print simple message
+        run: echo "Hello - workflow triggered by push to main"
+
+      - name: Print branch and commit
+        run: |
+          echo "Ref: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
+          echo "::notic:: Printed from Github Actions"
